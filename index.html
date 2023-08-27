@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="icon" href="img/download-removebg-preview.png">
+</head>
+
+<body>
+  <!--Menu-->
+  <div class="container-fluid">
+    <nav class="navbar col-12 position-fixed bg-dark navbar-expand-lg" data-bs-theme="dark" style="z-index:999;">
+      <img src="img/download-removebg-preview.png" alt="logo-avião" width="70" height="50">
+      <div class="container-fluid col-11">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#conteudo">Belezas Naturais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ponto-turistico">Pontos Turísticos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Direitos</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Carrossel-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bonitoMatoGrossodoSul.jpg" class="d-block w-100" alt="..." >
+        </div>
+        <div class="carousel-item">
+          <img src="img/fernandodeNoronha.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/foz-do-iguacu.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/lencoismaranhenses.jpeg" class="d-block w-100" alt="...">
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!--Conteúdo-->
+      <br><br>
+      <hr class="col-11 m-auto">
+      <div id="conteudo" class="col-11 m-auto"></div>
+      <h3 class="text-center"> Maiores belezas naturais do Brasil</h3>
+      <p class="text-center">O Brasil é um país cheio de belezas naturais, algumas conhecidas como o Pantanal as
+        praias de Copacabana e as Cataratas do Iguaçu e outras nem tanto com: Jericoacara, no Ceará. Esse site é pra
+        você que quer viajar e conhecer as muitas belezas que temos no nosso próprio país.
+      </p>
+     </div>
+     <hr class="col-11  m-auto"/>
+     <br><br>
+
+
+      <!--Cards-->
+      <h3 id="ponto-turistico"  class="text-center">Belezas Naturais do Brasil</h3>
+      <!--Card-->
+      <div class="row row-cols-1 row-cols-md-2 g-4 col-11 m-auto">
+        <div class="col">
+          <div class="card">
+            <img src="img/bonitoMatoGrossodoSul.jpg" class="card-img-top" alt="..." height="270px">
+            <div class="card-body">
+              <h5 class="card-title">Bonito-MS</h5>
+              <p class="card-text">Em Bonito MS estão alguns dos rios mais cristalinos do mundo. Os rios desta
+                região do Mato Grosso do Sul possuem uma transparência incrível e são repletos de peixes,
+                verdadeiros aquários naturais.</p>
+                <!--início código modal-->
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+  Conheça mais sobre Bonito
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bonito</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="img/img_modal01.JPG" class="card-img-top" alt="..." height="270px">
+              <p class="card-text">Em Bonito MS estão alguns dos rios mais cristalinos do mundo. Os rios desta
+                região do Mato Grosso do Sul possuem uma transparência incrível e são repletos de peixes,
+                verdadeiros aquários naturais.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/fernandodeNoronha.jpg" class="card-img-top" alt="..." height="270px">
+            <div class="card-body">
+              <h5 class="card-title">Fernando de Noronha-PE</h5>
+              <p class="card-text">Fernando de Noronha é um arquipélago vulcânico situado a cerca de 350
+                quilómetros ao largo da costa nordeste do Brasil. Tem o nome da sua maior ilha, um parque
+                marinho e santuário ecológico protegido com uma linha costeira recortada e vários
+                ecossistemas. É reconhecida pelas suas praias pouco urbanizadas e por atividades como
+                mergulho e snorkeling. As tartarugas marinhas, as raias, os golfinhos e os tubarões dos
+                recifes nadam nas águas quentes e cristalinas.</p>
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+Conheça mais sobre Fernando de Noronha
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Fernando de Noronha</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img_modal_02.jpg" class="card-img-top" alt="..." height="270px">
+        <p class="card-text">Fernando de Noronha é um arquipélago vulcânico situado a cerca de 350
+          quilómetros ao largo da costa nordeste do Brasil. Tem o nome da sua maior ilha, um parque
+          marinho e santuário ecológico protegido com uma linha costeira recortada e vários
+          ecossistemas. É reconhecida pelas suas praias pouco urbanizadas e por atividades como
+          mergulho e snorkeling. As tartarugas marinhas, as raias, os golfinhos e os tubarões dos
+          recifes nadam nas águas quentes e cristalinas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/foz-do-iguacu.jpg" class="card-img-top" alt="..." height="270px">
+            <div class="card-body">
+              <h5 class="card-title">Cataratas do Iguaçu-PR</h5>
+              <p class="card-text">As Cataratas do Iguaçu são um conjunto de cerca de 275 quedas de água no
+                rio Iguaçu, que ficam na bacia hidrográfica do rio Paraná, em Foz do Iguaçu. São uma das
+                maiores cataratas do mundo tanto em número de quedas e extensão quanto em volume de água, o
+                que fazem dela um lugar único.
+</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+Conheça mais sobre as Cataratas do Iguaçu
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Cataratas do Iguaçu</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img_modal_03.webp" class="card-img-top" alt="..." height="270px">
+    
+          <p class="card-text">As Cataratas do Iguaçu são um conjunto de cerca de 275 quedas de água no
+            rio Iguaçu, que ficam na bacia hidrográfica do rio Paraná, em Foz do Iguaçu. São uma das
+            maiores cataratas do mundo tanto em número de quedas e extensão quanto em volume de água, o
+            que fazem dela um lugar único.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/lencoismaranhenses.jpeg" class="card-img-top" alt="..." height="270px">
+            <div class="card-body">
+              <h5 class="card-title">Lençois Maranhenses-MA</h5>
+              <p class="card-text">O Parque Nacional dos Lençóis Maranhenses é uma área protegida na costa
+                atlântica norte do Brasil. É conhecido pela sua vasta paisagem desértica de grandes dunas de
+                areia branca e pelas lagoas sazonais de água da chuva. A Lagoa Azul e a Lagoa Bonita são
+                duas das maiores lagoas. O ecossistema diversificado do parque inclui pântanos de mangais.
+                As cidades vizinhas de Barreirinhas e Santo Amaro do Maranhão servem de porta de entrada
+                para o parque.</p>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+ Conheça mais sobre os Lençois Maranhenses
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Lençois Maranhenses</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img_modal_04.jpg" class="card-img-top" alt="..." height="270px">
+          <p class="card-text">O Parque Nacional dos Lençóis Maranhenses é uma área protegida na costa
+            atlântica norte do Brasil. É conhecido pela sua vasta paisagem desértica de grandes dunas de
+            areia branca e pelas lagoas sazonais de água da chuva. A Lagoa Azul e a Lagoa Bonita são
+            duas das maiores lagoas. O ecossistema diversificado do parque inclui pântanos de mangais.
+            As cidades vizinhas de Barreirinhas e Santo Amaro do Maranhão servem de porta de entrada
+            para o parque.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Rodapé-->
+
+      <footer id="footer" class="page-footer p-5 col-11 m-auto" style="background-color: #333;">
+        <div class="text-center">
+          <a href="#">@2023 Copyright: Luana Marques</a>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    </div>
+
+</body>
+
+</html>
